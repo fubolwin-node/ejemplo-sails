@@ -1,5 +1,4 @@
 <div class="container">
-    <div ng-app="" ng-init="nombre='Paco'">
 
       <h3>Usuarios
       <table class='table'>
@@ -31,11 +30,15 @@
       </table>
       <a href="/user/new">Crear Nuevo Usuario</a>
 
-
-
+<hr />
+    <div ng-app="" ng-init="nombre='Paco';cantidad=1;precio=50;apellidos='García Fernández';coche={marca:'FORT',modelo:'FIESTA 2017'}" >
 
         <p>El nombre es: {{ nombre }}</p>
         <p>Mi primera expresion: {{ 5 + 5 }}</p>
+        <p>Total en euros: {{ cantidad * precio }}</p>
+        <p>Total en euros: <span ng-bind="cantidad * precio"></span>, con ng-bind</p>
+        <p>El nombre es <span ng-bind="nombre + ' ' + apellidos" span=""></span></p>
+        <span ng-bind="coche.marca+ ' ' + coche.modelo"></span>
 
     </div>
 
