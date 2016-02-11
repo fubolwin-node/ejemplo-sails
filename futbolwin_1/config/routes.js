@@ -34,12 +34,17 @@ module.exports.routes = {
 
       '/': {
         view: 'home/landing'
+      }, 
+      'user': {
+        'new': true,
+        index: 'sessionAuth',
+        '*': true
+      },
+      'usertests': {
+        'new': true,
+        index: 'sessionAuth',
+        '*': true
       }
-      , 'user': {
-                  'new': true,
-                  index: 'sessionAuth',
-                  '*': true
-                }
 
   /***************************************************************************
   *                                                                          *
