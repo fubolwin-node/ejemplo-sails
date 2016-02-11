@@ -25,6 +25,20 @@ module.exports = {
                   }
                   response.redirect('/usertest/show/' + userTest.id); 
                 });
+            },
+
+            show: function(request, response) {
+              console.log("listo a buscar el usuario de id='"+request.params.id+"' y name='"+request.params.name+"'")
+              UserTest.findOne({id:request.params.id}).exec(function(err, userFinded){
+                if(err){
+                  console.log("Error vida HP!!! '"+err+"'")
+                  response.redirect('responses/notFound')
+                }
+                console.log("Encontró al peluche el usuario '"+userFinded+"'")
+                response.view({
+                  userTest: userFinded
+                })
+              })
             }
 
 };

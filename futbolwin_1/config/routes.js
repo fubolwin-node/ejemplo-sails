@@ -39,11 +39,6 @@ module.exports.routes = {
         'new': true,
         index: 'sessionAuth',
         '*': true
-      },
-      'usertests': {
-        'new': true,
-        index: 'sessionAuth',
-        '*': true
       }
 
   /***************************************************************************
