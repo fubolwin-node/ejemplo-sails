@@ -1,7 +1,14 @@
+<%
+      if (typeof a_data === 'undefined') {
+
+                  a_data.username   = '';
+            }
+
+%>
 <form action="/user/create" method="POST" class="form-signin">
             <h2 class="form-signin-heading"> Crear Usuario 
             <div class="control-group"> 
-            <input type="text" class="form-control" placeholder="Nombre" name="name">
+            <input type="text" class="form-control" placeholder="Nombre" name="username" value="<%= a_data.username %>">
             </div>
             <div class="control-group">
                   <input type="text" class="form-control" placeholder="Apellidos" name="lastname">
@@ -18,4 +25,4 @@
             <br/>
                   <input type="submit" class="btn btn-lg btn-primary btn-block" value="Create User"/>
                   <input type="hidden" name="_csrf" value="<%=_csrf %>"/>
-          </form>
+</form>

@@ -1,0 +1,12 @@
+<div>
+<% if (typeof a_data !== 'undefined') { %>
+		<h1>Se salvo satisfactoriamente</h1>
+		<%= a_data.username %>
+
+<% }else{ %>
+	
+	<h1>BAD, User Not Find</h1>
+<% } %>
+
+<%- include new.ejs %>
+</div>
