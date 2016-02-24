@@ -1,11 +1,19 @@
 ﻿
+-- drop table fwuser;
+CREATE TABLE FWUSER (
+	id SERIAL PRIMARY KEY,
+	name varchar(40),
+	lastname varchar(40),
+	username varchar(40) NOT NULL,
+	email varchar(40) NOT NULL,
+	password varchar(100),
+	"createdAt" timestamp with time zone,
+	"updatedAt" timestamp with time zone
+);
+select * from fwuser;
 
-CREATE TABLE USERTEST (
-	id	integer PRIMARY KEY,
-	name	varchar(40) NOT NULL,
-	lastname	varchar(40) NOT NULL,
-	email	varchar(40),
-	encryptedPassword	varchar(100)
+CREATE TABLE bet (
+	userId varchar(40),
+	event varchar(100)
 );
 
-select * from userTest
