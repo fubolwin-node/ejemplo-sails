@@ -1,4 +1,9 @@
 {
   "Welcome": "Bienvenido",
-  "A brand new app.": "Una nueva aplicación."
+  "A brand new app.": "Una nueva aplicación.",
+  "COMMONS.HELLO": "Hola!!",
+  "USER.CREATE.USER_NAME": "Nombre de usuario",
+  "USER.CREATE.EMAIL": "Correo electrónico",
+  "USER.CREATE.PASSWORD": "Contraseña",
+  "COMMONS.SAVE": "Guardar"
 }

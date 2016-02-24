@@ -1,4 +1,9 @@
 {
 	"Welcome": "Welcome",
-	"A brand new app.": "A brand new app."
+	"A brand new app.": "A brand new app.",
+	"COMMONS.HELLO": "Hello!!",
+  	"USER.CREATE.USER_NAME": "User name",
+  	"USER.CREATE.EMAIL": "E-Mail",
+  	"USER.CREATE.PASSWORD": "Password",
+  	"COMMONS.SAVE": "Save"
 }

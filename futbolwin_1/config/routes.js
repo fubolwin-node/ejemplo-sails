@@ -35,11 +35,29 @@ module.exports.routes = {
       '/': {
         view: 'home/landing'
       }, 
-      'user': {
-        'new': true,
-        index: 'sessionAuth',
-        '*': true
-      }
+/*
+  Rutas interfaces WEB login 
+*/
+      'GET /login': { 
+        view: 'login' 
+      },
+      'POST /login': 'AuthController.login',
+      'GET /logout': 'AuthController.logout',
+      'GET /signup': {
+        view: 'signup',
+        policy: 'localize'
+      },
+      'GET /signup/:language': {
+        view: 'signup',
+        policy: 'localize'
+      },
+      'POST /user': 'UserController.create',
+
+/*
+  Rutas interfaces REST
+*/
+      'GET /user': 'UserController.findAll'
+  
 
   /***************************************************************************
   *                                                                          *
